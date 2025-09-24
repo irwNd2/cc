@@ -55,7 +55,7 @@ onMounted(async () => {
 
 const tempC = computed(() => weather.value?.main?.temp?.toFixed(0))
 const feelsC = computed(() => weather.value?.main?.feels_like?.toFixed(0))
-const dewPoint = computed(() => (weather.value?.main?.temp_min - 2).toFixed(0)) // mock aja
+const dewPoint = computed(() => (weather.value?.main?.temp_min - 2).toFixed(0)) // mock
 const windDir = computed(() => {
   const deg = weather.value?.wind?.deg
   if (deg >= 315 || deg < 45) return 'N'
@@ -107,7 +107,7 @@ const windDesc = computed(() => {
 }
 
 .temp {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
 }
 
