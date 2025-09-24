@@ -122,6 +122,8 @@ const windDesc = computed(() => {
   gap: 4px;
   flex-wrap: nowrap;
   font-size: 14px;
+  text-wrap: nowrap;
+  max-width: 200px;
 }
 
 .map {
